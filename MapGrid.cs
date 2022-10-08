@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Oxide.Plugins
 {
-    [Info("MapGrid", "naumenkoff", "0.1.0")]
+    [Info("Map Grid", "naumenkoff", "0.1.1")]
     internal class MapGrid : RustPlugin
     {
         private void Init()
@@ -41,7 +41,7 @@ namespace Oxide.Plugins
             const int num2 = 7;
             var vector = a * num * num2;
             var num3 = Mathf.Floor(vector.x) + 1f;
-            var num4 = Mathf.Floor((float)Math.Round(num) * num2 - vector.y) - 1;
+            var num4 = Mathf.Floor(Mathf.Round(num) * num2 - vector.y) - 1;
             var text = string.Empty;
             var num5 = num3 / 26f;
             var num6 = num3 % 26f;
