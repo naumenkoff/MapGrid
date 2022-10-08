@@ -4,7 +4,9 @@ Map Grid allows you to find out the text-square location based on the coordinate
 
 ## Use for developers (as __API__)
 
-__```string PositionToGridCoord(Vector3 position)```__
+```
+string PositionToGridCoord(Vector3 position)
+```
 
 Add my plugin as a reference to your plugin
 ```
@@ -31,7 +33,10 @@ private void DisplayPlayerGrid(BasePlayer player)
 ## Using the plugin itself
 It can be used both through the in-game console and through the server console.
 ##### Via Server Console
-```mg.show x y z```
+```
+mg.show x y z
+```
+
 __Example:__
 ```
 > mg.show 322.2 533.3 144.4
@@ -39,7 +44,10 @@ __Example:__
 ```
 
 ##### Via In-Game Console
-```mg.show```
+```
+mg.show
+```
+
 __Example:__
 ```
 > mg.show
